@@ -10,6 +10,12 @@ html(lang="en")
         header
             h1 zoom       
         main 
-            h2 welcome
+            ul
+            form#nick
+                input(type="text", placeholder="choose a nickname", required)
+                button save!
+            form#msg
+                input(type="text", placeholder="write a msg", required)
+                button Send!
         button btn
         script(src="/public/js/app.js") 
