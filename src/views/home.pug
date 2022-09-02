@@ -9,8 +9,22 @@ html(lang="en")
     body 
         header
             h1 zoom       
+
         main 
-            
-        button btn
+            div#welcome
+                form#msg
+                    input(placeholder="roome name", required, type="text")
+                    button Enter Room
+                h4 open rooms
+                ul
+            div#room
+                h3
+                ul
+                form#msg
+                    input(placeholder="message", required, type="text")
+                    button Send
+                form#name
+                    input(placeholder="nickname", required, type="text")
+                    button Send
         script(src="/socket.io/socket.io.js")
         script(src="/public/js/app.js") 
